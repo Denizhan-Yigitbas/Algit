@@ -27,6 +27,18 @@ body {
   padding-right: 20px;
 }
 
+.navbar-nav button{
+  margin-top: 9px;
+} 
+
+.navbar-nav .dropdown-menu {
+  background-color: #337ab7;
+}
+
+.navbar-nav li .btn-group .drowdown-menu {
+  background-color: #5398c6;
+}
+
 .navbar-inverse .navbar-nav li a {
   color: #fff;
 }
@@ -100,7 +112,7 @@ p {
 }
 
 #about {
-  padding: 20px 0px;
+  padding: 60px 0px;
   /*background-color: #1fb8eb;*/
   background-color: #F4A460;
   padding-bottom: 20px;
@@ -112,7 +124,7 @@ p {
 }
 
 #system {
-  padding: 20px 0px;
+  padding: 60px 0px;
   background-color: #cbd5e0;
   padding-bottom: 20px;
 }
@@ -126,7 +138,7 @@ p {
 }
 
 #locations {
-  padding: 20px 0px;
+  padding: 60px 0px;
   background-color:  #297fb8;
 }
 
@@ -143,7 +155,7 @@ p {
 }
 
 #contact {
-  padding: 20px 0px;
+  padding: 60px 0px;
   background-color: #f74348;
   padding-bottom: 20px;
 }
