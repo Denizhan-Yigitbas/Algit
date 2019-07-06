@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:600,800');
+
+body {
+  font-family: "Dosis", sans-serif;
+  font-size: 200%;
+  color: #fff;
+  text-shadow: 1px 1px 1px #666;
+}
+
+.navbar {
+  background-color: #87CEFA;
+  border-bottom: 1px solid #5398c6;
+  padding: 1% 0%;
+}
+
+.navbar-brand {
+  padding: 0px 10px;
+}
+
+#logo {
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+.navbar-nav li {
+  padding-right: 20px;
+}
+
+.navbar-inverse .navbar-nav li a {
+  color: #fff;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+  background-color: #5398c6;
+}
+
+.navbar-header { 
+  padding-bottom: 5px;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+  border-color: #5398c6;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: #5398c6;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+  background-color: #5398c6;
+}
+
+img.banner {
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  font-size: 300%;
+  font-weight: 800;
+  text-shadow: 2px 2px 2px #666;
+}
+
+h2 {
+  font-size: 210%;
+  text-align: center;
+}
+
+h3 {
+  font-size: 150%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h4 {
+  font-size: 100%;
+  text-align:center;
+}
+
+p {
+  font-size: 120%;
+  padding: 6%;
+  text-align: center;
+}
+
+#home {
+  background-color: #87CEFA;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+#home img {
+  padding-top: 35px;
+  height: 100%;
+}
+
+#home h1 {
+  padding-top: 20px;
+}
+
+#about {
+  padding: 20px 0px;
+  /*background-color: #1fb8eb;*/
+  background-color: #F4A460;
+  padding-bottom: 20px;
+}
+
+#about img {
+  margin: auto;
+  display: block;
+}
+
+#system {
+  padding: 20px 0px;
+  background-color: #cbd5e0;
+  padding-bottom: 20px;
+}
+
+#system img {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+}
+
+#locations {
+  padding: 20px 0px;
+  background-color:  #297fb8;
+}
+
+#locations h1 {
+  background-color: #297fb8;
+  margin-top: 20px;
+}
+
+#map {
+  height: 500px;  /* The height is 400 pixels */
+  width: 60%;  /* The width is the width of the web page */
+  margin: auto;
+  margin-top: 30px;
+}
+
+#contact {
+  padding: 20px 0px;
+  background-color: #f74348;
+  padding-bottom: 20px;
+}
+
+#contact h4 {
+  padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

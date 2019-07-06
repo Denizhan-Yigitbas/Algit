@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Algit Checkout System</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="scrolling.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript">
+     $(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') && ( $(e.target).attr('class') != 'dropdown-toggle' ) ) {
+        $(this).collapse('hide');
+    }
+    });
+  </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+        data-target="#myNavBar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"><img src="img/logo2.png"></a>
+      </div> <!--- end of navbar header -->
+
+      <div class="collapse navbar-collapse" id="myNavBar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#system">System</a></li>
+          <li><a href="#locations">Locations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div> <!--- end of navbar collapse -->
+    </div> <!--- end of container -->
+  </nav> <!--- end of nav -->
+
+  <div id="home">
+    <h1>Algit</h1>
+    <h3>Eliminating Checkout Lines...Forever</h3>
+    <img src="img/test.png" class="banner">
+  </div>
+
+  <div id="about">
+    <h1>Welcome to Algit</h1>
+    <h3>Revolutionizing the shopping experience forever</h3>
+    <br><br>
+
+    <div class="row">
+      <div class="col-md-6">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      </div>
+      <div class="col-md-6">
+        <img src="img/clock.png">
+      </div>
+    </div> <!--- end of row -->
+  </div>
+
+  <div id="system">
+    <h1>How Algit Works</h1>
+    <img src="img/flow.png" class="banner">
+  </div>
+
+  <div id="locations">
+    <h1>Where Algit Is Available</h1>
+    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: {lat: 40.9842, lng: 29.0394}
+        });
+
+        setMarkers(map);
+      }
+
+      // Data for the markers.
+      var locs = [
+        ['Sample 1', 40.9842, 29.0394, 1],
+        ['Sample 2', 41.1042, 29.3177, 2],
+        ['Sample 3', 40.9482, 29.1085, 3],
+        ['Sample 4', 41.1122, 29.0200, 4]
+      ];
+
+      function setMarkers(map) {
+        // Adds markers to the map.
+        for (var i = 0; i < locs.length; i++) {
+          var beach = locs[i];
+          var marker = new google.maps.Marker({
+            position: {lat: beach[1], lng: beach[2]},
+            map: map,
+            title: beach[0]
+          });
+        }
+      }
+    </script>
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUJ5z2Dv0Z31ywoVxz-DvsS-mYFMsVrSE&callback=initMap">
+    </script>
+
+  </div>
+
+  <div id="contact">
+    <h1>Contact Us!</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <h3><u>Call Now!</u></h3>
+        <br>
+        <h4>720-775-8814</h4>
+      </div>
+      <div class="col-md-6">
+        <h3><u>Email Us!</u></h3>
+        <br>
+        <h4>denizhan@algit.com</h4>
+      </div>
+    </div> <!--- end of row -->
+  </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
